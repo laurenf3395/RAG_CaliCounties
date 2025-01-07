@@ -42,5 +42,6 @@ if __name__ == "__main__":
 
     for county in counties:
         county_modified = county.replace(" ", "_")
-        page_link = f"https://en.wikipedia.org/wiki/{county_modified}/_California"
+        page_link = f"https://en.wikipedia.org/wiki/{county_modified},_California"
+        print(page_link)
         save_wiki_content_as_text(page_link, dir_, county_modified + ".txt")
